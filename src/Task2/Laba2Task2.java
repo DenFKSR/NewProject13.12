@@ -2,44 +2,40 @@ package Task2;
 
 public class Laba2Task2 {
     public static void main(String[] args) {
-        Man man = new Man("Vasya", 16, "sailor", 12345 );
+        Man man = new Man();
+        man.setName("Vitaly");
+        man.setAge(12);
+        System.out.println(man);
     }
 }
-class Man{
-    String name;
-    int age;
-    String profession;
-    int bankAccount;
-    boolean materialStatus;
-
-    public Man() {
-        this.name = "name";
-        this.age = 0;
-        this.profession = "profession";
-        this.bankAccount = 000;
-        this.materialStatus = false;
-        System.out.println(this.name);
-        System.out.println(this.age);
-        System.out.println(this.profession);
-        System.out.println(this.bankAccount);
-        System.out.println(this.materialStatus);
+class Man {
+    private String name;
+    private int age;
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public int getAge() {
+        return age;
     }
 
+    public void setAge(int age) {
+        if (age < 0) {
+            System.out.println("возраст не может быть отрицательным");
+            return;
+        }
+        this.age = age;
+    }
+
+public Man() {
+ }
     public Man(String name, int age) {
         this.name = name;
         this.age = age;
-        System.out.println(this.name);
-        System.out.println(this.age);
     }
-
-    public Man(String name, int age, String profession, int bankAccount) {
-        this.name = name;
-        this.age = age;
-        this.profession = profession;
-        this.bankAccount = bankAccount;
-        System.out.println(this.name);
-        System.out.println(this.age);
-        System.out.println(this.profession);
-        System.out.println(this.bankAccount);
+    public String toString() {
+        return getName() + ", " + getAge();
     }
 }

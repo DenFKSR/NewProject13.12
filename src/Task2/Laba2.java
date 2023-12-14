@@ -2,13 +2,13 @@ package Task2;
 
 public class Laba2 {
     public static void main(String[] args) {
-        var a = 7.27;
-        var b = 8.35;
-        Calculator calculator = new Calculator();
-        System.out.println(calculator.summ(a,b));
-        System.out.println(calculator.subtraction(a,b));
-        System.out.println(calculator.multiplication(a,b));
-        System.out.println(calculator.div(a,b));
+        var a = 10;
+        var b = 3;
+
+       System.out.println(Calculator.summ(a,b));
+       System.out.println(Calculator.subtraction(a,b));
+       System.out.println(Calculator.multiplication(a,b));
+       System.out.println(Calculator.div(a,b));
     }
 }
 class Calculator{
@@ -39,11 +39,11 @@ class Calculator{
     public static double multiplication(double a, double b){// последнее
         return a*b;
     }
-    public static int div(int a, int b){
-        return a/b;
+    public static double div(int a, int b){
+        return (double)a/b;
     }
-    public static long div(long a, long b){
-        return a/b;
+    public static double div(long a, long b){
+        return (double) a/b;
     }
     public static double div(double a, double b){// последнее
         return a/b;
