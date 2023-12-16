@@ -1,17 +1,6 @@
-package Laba2.Task1;
+package laba2.task1;
 
-public class Laba2 {
-    public static void main(String[] args) {
-        var a = 7.27;
-        var b = 8.35;
-        Calculator calculator = new Calculator();
-        System.out.println(calculator.summ(a,b));
-        System.out.println(calculator.subtraction(a,b));
-        System.out.println(calculator.multiplication(a,b));
-        System.out.println(calculator.div(a,b));
-    }
-}
-class Calculator{
+public class Calculator {
     public static int summ(int a, int b){
         return a+b;
     }
@@ -39,12 +28,8 @@ class Calculator{
     public static double multiplication(double a, double b){// последнее
         return a*b;
     }
-    public static int div(int a, int b){
-        return a/b;
-    }
-    public static long div(long a, long b){
-        return a/b;
-    }
+    public static double div(int a, int b){return (double) a/b;}
+    public static double div(long a, long b){return (double)a/b;}
     public static double div(double a, double b){// последнее
         return a/b;
     }

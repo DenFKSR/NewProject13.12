@@ -1,4 +1,4 @@
-package Laba2.Task2;
+package laba2.task2;
 class Man {
     private  String name;
     private int age;
