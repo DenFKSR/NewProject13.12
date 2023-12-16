@@ -19,14 +19,14 @@ public class Laba1 {
 
     public static void Task2() {
         System.out.println("Задание 2");
-        System.out.println( (46 + 10) * ((double)10/3));
+        System.out.println((46 + 10) * (10 / 3));
         System.out.println((29) * (4) * (-15) + "\n");
     }
 
     public static void Task3() {
         System.out.println("Задание 3");
         int number = 10500;
-        double result = ((number /10.0)/10.0);
+        int result = ((number / 10) / 10);
         System.out.println(result + "\n");
     }
 
